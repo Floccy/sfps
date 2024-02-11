@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2024 at 06:05 AM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Feb 10, 2024 at 11:45 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,13 +27,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `contacts`
 --
 
-CREATE TABLE `contacts` (
+CREATE TABLE `contacts1` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -42,7 +42,7 @@ CREATE TABLE `contacts` (
 --
 -- Indexes for table `contacts`
 --
-ALTER TABLE `contacts`
+ALTER TABLE `contacts1`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -52,7 +52,7 @@ ALTER TABLE `contacts`
 --
 -- AUTO_INCREMENT for table `contacts`
 --
-ALTER TABLE `contacts`
+ALTER TABLE `contacts1`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
