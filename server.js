@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -12,8 +11,8 @@ app.use(bodyParser.json());
 // Create a connection to the MySQL database
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'yourusername',
-  password: 'yourpassword',
+  user: 'root',
+  password: '',
   database: 'contacts'
 });
 
